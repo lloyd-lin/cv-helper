@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",      // Output relative to this tsconfig.json
+    "rootDir": "./src",       // Root relative to this tsconfig.json
+    "composite": true       // Required for project references
+  },
+  "include": ["src/**/*"],   // Files to include relative to this tsconfig.json
+  "exclude": ["node_modules", "dist"], // Exclude node_modules (relative) and own output dir
+  "references": []          // No dependencies on other local projects
+} 

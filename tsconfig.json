@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022", // Or a suitable target for your Node version
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    /* Strict Type-Checking Options: */
+    "strict": true,
+    "noImplicitAny": true,
+    /* Module Resolution Options: */
+    "module": "NodeNext", // Use NodeNext for modern Node.js module resolution
+    "moduleResolution": "NodeNext",
+    "outDir": "./mcp_server/dist", // Corrected output directory
+    "rootDir": "./mcp_server/src", // Corrected root directory
+    /* Emit Options: */
+    "sourceMap": true,
+    /* Interop Constraints: */
+    "forceConsistentCasingInFileNames": true,
+    /* Type Checking Options: */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Completeness */
+    // "noImplicitOverride": true, // Optional: requires explicit 'override' keyword
+  },
+  "files": [], // Explicitly tell the root config not to compile any files directly
+  "include": [], // Explicitly tell the root config not to include any files directly
+  "references": [
+    { "path": "./mcp_server" }, // Reference the server project
+    { "path": "./mcp_client" }  // Reference the client project
+  ]
+}
